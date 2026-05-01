@@ -1,14 +1,20 @@
 import { skills } from '../data/projects'
+import { useInView } from '../hooks/useInView'
 
 export default function Skills() {
+  const [ref, inView] = useInView()
+
   return (
-    <section id="skills" className="py-24 px-6 border-t border-zinc-200 dark:border-zinc-800/60">
+    <section ref={ref} id="skills" className="py-24 px-6 border-t border-zinc-200 dark:border-zinc-800/60">
       <div className="max-w-6xl mx-auto">
-        <p className="font-mono text-amber-500 dark:text-amber-400 text-sm mb-3">03. Skills</p>
-        <h2 className="font-display text-4xl font-bold text-zinc-900 dark:text-white mb-12">Tech stack</h2>
+        <div className={`reveal ${inView ? 'visible' : ''}`}>
+          <p className="font-mono text-amber-500 dark:text-amber-400 text-sm mb-3">03. Skills</p>
+          <h2 className="font-display text-4xl font-bold text-zinc-900 dark:text-white mb-12">Tech stack</h2>
+        </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skills.map(group => (
-            <div key={group.category} className="p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:border-amber-400/50 dark:hover:border-amber-400/30 transition-colors">
+          {skills.map((group, i) => (
+            <div key={group.category}
+              className={`reveal reveal-delay-${Math.min(i + 1, 4)} ${inView ? 'visible' : ''} p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:border-amber-400/50 dark:hover:border-amber-400/30 transition-colors`}>
               <h3 className="font-display font-semibold text-xs uppercase tracking-widest text-amber-500 dark:text-amber-400 mb-4">
                 {group.category}
               </h3>

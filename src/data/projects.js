@@ -138,7 +138,11 @@ export const projects = [
 export const skills = [
   {
     category: 'Languages',
-    items: ['Java', 'Go', 'SQL', 'Groovy'],
+    items: ['Go', 'Java', 'SQL', 'Groovy'],
+  },
+  {
+    category: 'Database & Caching',
+    items: ['Redis', 'MongoDB', 'PostgreSQL', 'MySQL'],
   },
   {
     category: 'Frameworks',
@@ -146,18 +150,18 @@ export const skills = [
   },
   {
     category: 'Infrastructure',
-    items: ['Docker', 'Kubernetes', 'Redis', 'Apache Kafka'],
+    items: ['Docker', 'Kubernetes'],
   },
   {
     category: 'Data & Search',
-    items: ['Elasticsearch', 'MySQL', 'Logstash', 'Kibana'],
+    items: ['Elasticsearch', 'Logstash', 'Kibana', 'Beats'],
   },
   {
     category: 'Architecture',
-    items: ['Microservices', 'Distributed Systems', 'REST APIs', 'Event-driven', 'Lambda Architecture'],
+    items: ['Microservices', 'Distributed Systems', 'REST APIs', 'Event-driven', 'Saga pattern', 'Lambda Architecture'],
   },
   {
     category: 'Tools',
-    items: ['Git', 'Jira', 'Postman', 'IntelliJ IDEA', 'Swagger'],
+    items: ['Git', 'Jira', 'Clickup', 'Postman', 'IntelliJ IDEA', 'Swagger'],
   },
 ]

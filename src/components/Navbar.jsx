@@ -3,10 +3,34 @@ import { useState, useEffect } from 'react'
 export default function Navbar({ dark, setDark }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
+    const onScroll = () => {
+      setScrolled(window.scrollY > 20)
+      
+      // Determine active section
+      const sections = ['about', 'experience', 'skills', 'certifications', 'architectures', 'contact']
+      const scrollPosition = window.scrollY + 100 // Offset for navbar height
+      
+      let closestSection = ''
+      let minDistance = Infinity
+      
+      sections.forEach(section => {
+        const element = document.getElementById(section)
+        if (element) {
+          const distance = Math.abs(scrollPosition - element.offsetTop)
+          if (distance < minDistance) {
+            minDistance = distance
+            closestSection = section
+          }
+        }
+      })
+      
+      setActiveSection(closestSection)
+    }
     window.addEventListener('scroll', onScroll)
+    onScroll() // Initial check
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
@@ -39,7 +63,11 @@ export default function Navbar({ dark, setDark }) {
         <div className="hidden md:flex items-center gap-7">
           {links.map(l => (
             <a key={l} href={`#${l.toLowerCase()}`}
-              className="text-sm font-medium text-zinc-500 hover:text-amber-500 dark:text-zinc-400 dark:hover:text-amber-400 transition-colors">
+              className={`text-sm font-medium transition-colors ${
+                activeSection === l.toLowerCase()
+                  ? 'text-amber-500 dark:text-amber-400'
+                  : 'text-zinc-500 hover:text-amber-500 dark:text-zinc-400 dark:hover:text-amber-400'
+              }`}>
               {l}
             </a>
           ))}
@@ -60,7 +88,11 @@ export default function Navbar({ dark, setDark }) {
         <div className="md:hidden bg-zinc-50 dark:bg-[#0a0a0a] border-b border-zinc-200 dark:border-zinc-800 px-6 py-4 flex flex-col gap-4">
           {links.map(l => (
             <a key={l} href={`#${l.toLowerCase()}`} onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-amber-500">
+              className={`text-sm font-medium transition-colors ${
+                activeSection === l.toLowerCase()
+                  ? 'text-amber-500 dark:text-amber-400'
+                  : 'text-zinc-600 dark:text-zinc-300 hover:text-amber-500'
+              }`}>
               {l}
             </a>
           ))}
