@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+
+  body {
+    @apply bg-zinc-50 text-zinc-900 dark:bg-[#0a0a0a] dark:text-zinc-100 transition-colors duration-300;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  ::selection { background: #F59E0B; color: #0a0a0a; }
+
+  ::-webkit-scrollbar { width: 3px; }
+  ::-webkit-scrollbar-track { @apply bg-zinc-100 dark:bg-zinc-900; }
+  ::-webkit-scrollbar-thumb { @apply bg-amber-400 rounded-full; }
+}
+
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .opacity-0-init { opacity: 0; }
+
+  .gradient-name {
+    background: linear-gradient(90deg, #F59E0B 0%, #EF4444 50%, #8B5CF6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .grain::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.4;
+  }
+}
+
+.mermaid svg { max-width: 100%; height: auto; }
