@@ -8,13 +8,14 @@ export const experience = [
     description: "Cloud-native blockchain platform for automated fund distribution and digital dealing, integrated with Clearstream's Vestima network.",
     bullets: [
       'Reduced transaction processing time by 36% and bulk NAV valuation throughput by 62% — by analysing the end-to-end processing chain, introducing concurrency, and collapsing redundant DB calls into batched queries.',
-      'Sole architect and owner of a file-ingestion microservice processing thousands of fund transactions per run for a major distributor client, bypassing inapplicable steps to fast-track confirmed trades.',
+      'Sole architect and owner of a BlackRock file-ingestion microservice that also routes requests through a workflow of dedicated processing services, handling thousands of fund transactions per run and bypassing inapplicable steps to fast-track confirmed trades.',
       'Delivered a Forex exchange management feature end-to-end (analysis → design → documentation → build), mapping enriched FX data to Elasticsearch for real-time auditability.',
       'Introduced Redis distributed locks on fund and shareclass resources, eliminating race conditions that could corrupt NAV calculations under concurrent load.',
       'Authored blockchain balance reconciliation scripts for a shareclass merge — converting a high-risk manual operation into a repeatable, auditable process.',
+      'Implemented 4eyes checking for critical operations like order cancellations on the platform, enforcing dual sign-off for added security and compliance.',
       'Onboarded several new engineers via codebase walkthroughs, pair programming, and documentation.',
     ],
-    stack: ['Go', 'Java', 'Redis', 'Kafka', 'Blockchain', 'MongoDB', 'Microservices', 'Quarkus', 'Elasticsearch', 'Kibana', 'Grafana', 'Docker'],
+    stack: ['Go', 'Java', 'Redis', 'Kafka', 'Blockchain', 'MongoDB', 'Microservices', 'Quarkus', 'Elasticsearch', 'Kibana', 'Grafana', 'Jaeger', 'Docker'],
   },
   {
     id: 2,

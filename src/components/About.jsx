@@ -13,7 +13,7 @@ export default function About() {
             I make systems fast.<br />Then I make them right.
           </h2>
           <p className="font-semibold text-zinc-900 dark:text-white mb-6">
-            AmrMoujbani<br />
+            Amr Moujbani<br />
             <span className="text-sm text-zinc-500 dark:text-zinc-400 font-normal">Senior Backend Engineer focused on performance optimisation and distributed systems.</span><br />
             <span className="text-sm text-amber-500 dark:text-amber-400 font-mono">Luxembourg 🇱🇺</span>
           </p>

@@ -162,6 +162,6 @@ export const skills = [
   },
   {
     category: 'Tools',
-    items: ['Git', 'Jira', 'Clickup', 'Grafana', 'Postman', 'IntelliJ IDEA', 'VsCode', 'Swagger'],
+    items: ['Git', 'Jira', 'Clickup', 'Grafana', 'Jaeger', 'Postman', 'IntelliJ IDEA', 'VsCode', 'Swagger'],
   },
 ]
