@@ -17,7 +17,7 @@ export const architectures = [
     title: 'Big Data Real-time Pipeline',
     company: 'End of Year Project — ESPRIT',
     description: 'Horizontally scalable Lambda architecture pipeline ingesting from heterogeneous sources, processing and visualising high-volume data streams in real time.',
-    imagePath: null, // replace with '/architectures/bigdata-pipeline.png'
+    imagePath: '/architectures/bigdata-lambda-pipeline.svg', 
     tags: ['Kafka', 'Spark', 'Hadoop', 'Elasticsearch', 'NiFi'],
   },
 ]
