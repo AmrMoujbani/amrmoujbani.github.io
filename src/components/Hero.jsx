@@ -58,7 +58,7 @@ export default function Hero() {
           style={{ animationDelay: '500ms', animationFillMode: 'forwards' }}>
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-rose-500 rounded-lg blur-xl opacity-30 animate-pulse"></div>
-            <img src="/me.jpg" alt="Amr Moujbani" className="relative w-64 h-80 md:w-80 md:h-96 rounded-lg border-4 border-zinc-50 dark:border-zinc-900 shadow-2xl object-cover" />
+            <img src="/me.png" alt="Amr Moujbani" className="relative w-64 h-80 md:w-80 md:h-96 rounded-lg border-4 border-zinc-50 dark:border-zinc-900 shadow-2xl object-cover" />
           </div>
         </div>
       </div>

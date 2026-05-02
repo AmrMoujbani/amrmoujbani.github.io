@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-beats" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#00BFB3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#162032"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="640" fill="url(#bg-grad)" rx="12"/>
+
+  <!-- Subtle grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="0.15" opacity="0.06"/>
+  </pattern>
+  <rect width="1000" height="640" fill="url(#grid)" rx="12"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="1000" height="52" rx="12" fill="#0F172A"/>
+  <rect x="0" y="40" width="1000" height="12" fill="#0F172A"/>
+  <text x="36" y="32" font-size="15" font-weight="600" fill="#F1F5F9" letter-spacing="0.3">Log Centralisation &amp; Monitoring Pipeline</text>
+  <text x="36" y="48" font-size="10" fill="#64748B" letter-spacing="0.5">VERMEG Banking &amp; Insurance · Analyst Developer 2023–2024</text>
+
+  <!-- Layer labels -->
+  <text x="78" y="78" font-size="9" fill="#475569" font-weight="600" letter-spacing="1.5" text-anchor="middle">SOURCES</text>
+  <text x="272" y="78" font-size="9" fill="#475569" font-weight="600" letter-spacing="1.5" text-anchor="middle">BEATS LAYER</text>
+  <text x="466" y="78" font-size="9" fill="#475569" font-weight="600" letter-spacing="1.5" text-anchor="middle">PROCESS</text>
+  <text x="660" y="78" font-size="9" fill="#475569" font-weight="600" letter-spacing="1.5" text-anchor="middle">INDEX &amp; STORE</text>
+  <text x="854" y="78" font-size="9" fill="#475569" font-weight="600" letter-spacing="1.5" text-anchor="middle">VISUALISE</text>
+
+  <!-- Layer separator lines -->
+  <line x1="170" y1="62" x2="170" y2="560" stroke="#1E3A5F" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.6"/>
+  <line x1="362" y1="62" x2="362" y2="560" stroke="#1E3A5F" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.6"/>
+  <line x1="556" y1="62" x2="556" y2="560" stroke="#1E3A5F" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.6"/>
+  <line x1="752" y1="62" x2="752" y2="560" stroke="#1E3A5F" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.6"/>
+
+  <!-- ═══════════════════════════════ SOURCE CARDS ═══════════════════════════════ -->
+
+  <!-- Java App 1 -->
+  <rect x="20" y="100" width="116" height="72" rx="8" fill="url(#card-grad)" stroke="#334155" stroke-width="0.8" filter="url(#shadow)"/>
+  <!-- Java logo: simplified cup shape with brand orange #f89820 -->
+  <path d="M51 127 Q48 133 53 135 Q44 137 51 142" fill="none" stroke="#f89820" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M57 124 Q54 131 59 133 Q50 136 57 141" fill="none" stroke="#f89820" stroke-width="1.6" stroke-linecap="round"/>
+  <ellipse cx="54" cy="143" rx="9" ry="2.5" fill="none" stroke="#f89820" stroke-width="1.2"/>
+  <path d="M47 149 Q54 146 61 149" fill="none" stroke="#f89820" stroke-width="0.9" opacity="0.5"/>
+  <text x="90" y="122" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">Java App</text>
+  <text x="90" y="136" font-size="9" fill="#64748B" text-anchor="middle">Spring Boot</text>
+  <text x="90" y="150" font-size="9" fill="#475569" text-anchor="middle">Service logs</text>
+
+  <!-- Java App 2 -->
+  <rect x="20" y="192" width="116" height="72" rx="8" fill="url(#card-grad)" stroke="#334155" stroke-width="0.8" filter="url(#shadow)"/>
+  <path d="M51 219 Q48 225 53 227 Q44 229 51 234" fill="none" stroke="#f89820" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M57 216 Q54 223 59 225 Q50 228 57 233" fill="none" stroke="#f89820" stroke-width="1.6" stroke-linecap="round"/>
+  <ellipse cx="54" cy="235" rx="9" ry="2.5" fill="none" stroke="#f89820" stroke-width="1.2"/>
+  <path d="M47 241 Q54 238 61 241" fill="none" stroke="#f89820" stroke-width="0.9" opacity="0.5"/>
+  <text x="90" y="214" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">Java App</text>
+  <text x="90" y="228" font-size="9" fill="#64748B" text-anchor="middle">Spring Boot</text>
+  <text x="90" y="242" font-size="9" fill="#475569" text-anchor="middle">AOP logging</text>
+
+  <!-- Jira -->
+  <rect x="20" y="284" width="116" height="72" rx="8" fill="url(#card-grad)" stroke="#334155" stroke-width="0.8" filter="url(#shadow)"/>
+  <!-- Jira logo: blue diamond with gradient wing shape #0052CC / #2684FF -->
+  <path d="M55 294 L68 307 L55 320 L42 307 Z" fill="#0052CC"/>
+  <path d="M55 294 L68 307 L55 307 Z" fill="#2684FF"/>
+  <path d="M55 320 L68 307 L55 307 Z" fill="#2684FF" opacity="0.6"/>
+  <text x="90" y="306" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">Jira</text>
+  <text x="90" y="320" font-size="9" fill="#64748B" text-anchor="middle">Atlassian</text>
+  <text x="90" y="334" font-size="9" fill="#475569" text-anchor="middle">Activity logs</text>
+
+  <!-- Confluence -->
+  <rect x="20" y="376" width="116" height="72" rx="8" fill="url(#card-grad)" stroke="#334155" stroke-width="0.8" filter="url(#shadow)"/>
+  <!-- Confluence logo: blue overlapping diamond wave #0052CC -->
+  <path d="M44 416 Q50 398 57 406 Q64 398 70 416" fill="none" stroke="#0052CC" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M44 416 Q50 434 57 426 Q64 434 70 416" fill="none" stroke="#2684FF" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="90" y="398" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">Confluence</text>
+  <text x="90" y="412" font-size="9" fill="#64748B" text-anchor="middle">Atlassian</text>
+  <text x="90" y="426" font-size="9" fill="#475569" text-anchor="middle">Access logs</text>
+
+  <!-- CentOS infra badge -->
+  <rect x="20" y="490" width="116" height="56" rx="8" fill="#0F172A" stroke="#1E3A5F" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <!-- CentOS logo: 4-petal symbol #9DBB61 / #EE4266 / #FBB040 / #00A4E4 -->
+  <path d="M61 508 L68 515 L61 522 L54 515 Z" fill="#9DBB61" opacity="0.9"/>
+  <path d="M61 508 L54 515 L54 508 Z" fill="#EE4266" opacity="0.9"/>
+  <path d="M61 522 L68 515 L68 522 Z" fill="#FBB040" opacity="0.9"/>
+  <path d="M54 515 L61 508 L61 515 Z" fill="#00A4E4" opacity="0.5"/>
+  <text x="90" y="512" font-size="10" font-weight="600" fill="#94A3B8" text-anchor="middle">CentOS</text>
+  <text x="90" y="526" font-size="9" fill="#475569" text-anchor="middle">Infrastructure</text>
+  <text x="90" y="538" font-size="8" fill="#334155" text-anchor="middle">Linux · On-premise</text>
+
+  <!-- ═══════════════════════════════ BEATS LAYER ═══════════════════════════════ -->
+
+  <!-- Filebeat card -->
+  <rect x="182" y="130" width="130" height="72" rx="8" fill="url(#card-grad)" stroke="#164E63" stroke-width="0.8" filter="url(#shadow)"/>
+  <!-- Beats logo: green hexagon-ish shape #00BFB3 -->
+  <polygon points="210,162 216,156 224,156 230,162 224,168 216,168" fill="none" stroke="#00BFB3" stroke-width="1.8"/>
+  <polygon points="210,162 216,158 224,158 230,162 224,166 216,166" fill="#00BFB3" opacity="0.2"/>
+  <path d="M218 162 h6" stroke="#00BFB3" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M220 159 v6" stroke="#00BFB3" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="253" y="148" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">Filebeat</text>
+  <text x="253" y="163" font-size="9" fill="#64748B" text-anchor="middle">Elastic Beats</text>
+  <text x="253" y="177" font-size="8" fill="#475569" text-anchor="middle">Log shipping · parsing</text>
+
+  <!-- Metricbeat card -->
+  <rect x="182" y="222" width="130" height="72" rx="8" fill="url(#card-grad)" stroke="#164E63" stroke-width="0.8" filter="url(#shadow)"/>
+  <polygon points="210,254 216,248 224,248 230,254 224,260 216,260" fill="none" stroke="#00BFB3" stroke-width="1.8"/>
+  <polygon points="210,254 216,250 224,250 230,254 224,258 216,258" fill="#00BFB3" opacity="0.2"/>
+  <path d="M218 254 h6" stroke="#00BFB3" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M220 251 v6" stroke="#00BFB3" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="253" y="240" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">Metricbeat</text>
+  <text x="253" y="255" font-size="9" fill="#64748B" text-anchor="middle">Elastic Beats</text>
+  <text x="253" y="269" font-size="8" fill="#475569" text-anchor="middle">Metrics · System stats</text>
+
+  <!-- Auditbeat card -->
+  <rect x="182" y="314" width="130" height="72" rx="8" fill="url(#card-grad)" stroke="#164E63" stroke-width="0.8" filter="url(#shadow)"/>
+  <polygon points="210,346 216,340 224,340 230,346 224,352 216,352" fill="none" stroke="#00BFB3" stroke-width="1.8"/>
+  <polygon points="210,346 216,342 224,342 230,346 224,350 216,350" fill="#00BFB3" opacity="0.2"/>
+  <path d="M218 346 h6" stroke="#00BFB3" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M220 343 v6" stroke="#00BFB3" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="253" y="332" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">Auditbeat</text>
+  <text x="253" y="347" font-size="9" fill="#64748B" text-anchor="middle">Elastic Beats</text>
+  <text x="253" y="361" font-size="8" fill="#475569" text-anchor="middle">Jira/Confluence audit</text>
+
+  <!-- Beats annotation -->
+  <rect x="182" y="408" width="130" height="44" rx="6" fill="none" stroke="#00BFB3" stroke-width="0.6" stroke-dasharray="3 3"/>
+  <text x="247" y="426" font-size="9" fill="#00BFB3" text-anchor="middle" opacity="0.8">Initial transformation</text>
+  <text x="247" y="440" font-size="9" fill="#475569" text-anchor="middle">before forwarding</text>
+
+  <!-- ═══════════════════════════════ LOGSTASH ═══════════════════════════════ -->
+
+  <rect x="374" y="160" width="130" height="200" rx="8" fill="url(#card-grad)" stroke="#F59E0B" stroke-width="0.9" filter="url(#shadow)"/>
+  <!-- Logstash logo: F shape pipes #F59E0B -->
+  <rect x="394" y="185" width="36" height="7" rx="3" fill="#F59E0B" opacity="0.9"/>
+  <rect x="394" y="198" width="26" height="7" rx="3" fill="#F59E0B" opacity="0.6"/>
+  <rect x="394" y="211" width="31" height="7" rx="3" fill="#F59E0B" opacity="0.75"/>
+  <rect x="394" y="185" width="7" height="33" rx="3" fill="#F59E0B" opacity="0.4"/>
+  <text x="439" y="186" font-size="12" font-weight="700" fill="#F59E0B" text-anchor="middle">Logstash</text>
+  <text x="439" y="240" font-size="9" fill="#94A3B8" text-anchor="middle">Pipeline processing</text>
+  <line x1="390" y1="252" x2="488" y2="252" stroke="#334155" stroke-width="0.5"/>
+  <text x="439" y="272" font-size="9" fill="#64748B" text-anchor="middle">Transform</text>
+  <text x="439" y="286" font-size="9" fill="#64748B" text-anchor="middle">Normalise</text>
+  <text x="439" y="300" font-size="9" fill="#64748B" text-anchor="middle">Filter</text>
+  <text x="439" y="314" font-size="9" fill="#64748B" text-anchor="middle">Enrich fields</text>
+  <text x="439" y="328" font-size="9" fill="#64748B" text-anchor="middle">Parse patterns</text>
+  <text x="439" y="342" font-size="9" fill="#64748B" text-anchor="middle">Route output</text>
+
+  <!-- ═══════════════════════════════ ELASTICSEARCH ═══════════════════════════════ -->
+
+  <rect x="568" y="140" width="130" height="110" rx="8" fill="url(#card-grad)" stroke="#F59E0B" stroke-width="0.9" filter="url(#shadow)"/>
+  <!-- Elasticsearch logo: magnifier #F59E0B -->
+  <circle cx="600" cy="187" r="16" fill="none" stroke="#F59E0B" stroke-width="2.2"/>
+  <circle cx="600" cy="187" r="9" fill="#F59E0B" opacity="0.15"/>
+  <line x1="612" y1="199" x2="622" y2="210" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="596" y1="183" x2="604" y2="183" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="600" y1="179" x2="600" y2="187" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" opacity="0.8"/>
+  <text x="620" y="163" font-size="11" font-weight="700" fill="#F59E0B" text-anchor="middle">Elasticsearch</text>
+  <text x="633" y="216" font-size="9" fill="#94A3B8" text-anchor="middle">Index · Store</text>
+  <text x="633" y="230" font-size="9" fill="#64748B" text-anchor="middle">Full-text search</text>
+  <text x="633" y="244" font-size="9" fill="#64748B" text-anchor="middle">v8.6 · Elastic Stack</text>
+
+  <!-- ═══════════════════════════════ KIBANA ═══════════════════════════════ -->
+
+  <rect x="568" y="280" width="130" height="120" rx="8" fill="url(#card-grad)" stroke="#FF6B9D" stroke-width="0.9" filter="url(#shadow)"/>
+  <!-- Kibana logo: bar chart with pink accent #FF6B9D -->
+  <rect x="588" y="325" width="9" height="28" rx="2" fill="#FF6B9D" opacity="0.7"/>
+  <rect x="602" y="313" width="9" height="40" rx="2" fill="#FF6B9D" opacity="0.85"/>
+  <rect x="616" y="306" width="9" height="47" rx="2" fill="#FF6B9D"/>
+  <line x1="582" y1="354" x2="632" y2="354" stroke="#475569" stroke-width="0.8"/>
+  <text x="633" y="295" font-size="11" font-weight="700" fill="#FF6B9D" text-anchor="middle">Kibana</text>
+  <text x="633" y="368" font-size="9" fill="#94A3B8" text-anchor="middle">Dashboards</text>
+  <text x="633" y="382" font-size="9" fill="#64748B" text-anchor="middle">Real-time alerts</text>
+  <text x="633" y="394" font-size="9" fill="#64748B" text-anchor="middle">Elastic Stack</text>
+
+  <!-- ═══════════════════════════════ OUTPUT ═══════════════════════════════ -->
+
+  <rect x="764" y="190" width="200" height="180" rx="8" fill="url(#card-grad)" stroke="#22D3EE" stroke-width="0.9" filter="url(#shadow)"/>
+  <text x="864" y="215" font-size="12" font-weight="700" fill="#22D3EE" text-anchor="middle">Real-time Monitoring</text>
+  <line x1="780" y1="224" x2="948" y2="224" stroke="#1E3A5F" stroke-width="0.5"/>
+
+  <!-- pulse dot -->
+  <circle cx="795" cy="246" r="5" fill="#22D3EE" opacity="0.9"/>
+  <circle cx="795" cy="246" r="9" fill="none" stroke="#22D3EE" stroke-width="0.8" opacity="0.4"/>
+  <text x="815" y="250" font-size="9" fill="#94A3B8">Live incident detection</text>
+
+  <circle cx="795" cy="268" r="5" fill="#4ADE80" opacity="0.9"/>
+  <circle cx="795" cy="268" r="9" fill="none" stroke="#4ADE80" stroke-width="0.8" opacity="0.4"/>
+  <text x="815" y="272" font-size="9" fill="#94A3B8">Reduced MTTR</text>
+
+  <circle cx="795" cy="290" r="5" fill="#F59E0B" opacity="0.9"/>
+  <circle cx="795" cy="290" r="9" fill="none" stroke="#F59E0B" stroke-width="0.8" opacity="0.4"/>
+  <text x="815" y="294" font-size="9" fill="#94A3B8">Cross-service visibility</text>
+
+  <circle cx="795" cy="312" r="5" fill="#C084FC" opacity="0.9"/>
+  <circle cx="795" cy="312" r="9" fill="none" stroke="#C084FC" stroke-width="0.8" opacity="0.4"/>
+  <text x="815" y="316" font-size="9" fill="#94A3B8">Alert thresholds</text>
+
+  <circle cx="795" cy="334" r="5" fill="#FB7185" opacity="0.9"/>
+  <circle cx="795" cy="334" r="9" fill="none" stroke="#FB7185" stroke-width="0.8" opacity="0.4"/>
+  <text x="815" y="338" font-size="9" fill="#94A3B8">Pattern anomaly detection</text>
+
+  <circle cx="795" cy="356" r="5" fill="#34D399" opacity="0.9"/>
+  <circle cx="795" cy="356" r="9" fill="none" stroke="#34D399" stroke-width="0.8" opacity="0.4"/>
+  <text x="815" y="360" font-size="9" fill="#94A3B8">Ops dashboard</text>
+
+  <!-- ═══════════════════════════════ CONNECTORS ═══════════════════════════════ -->
+
+  <!-- Sources → Beats -->
+  <path d="M136 136 L182 166" fill="none" stroke="#94A3B8" stroke-width="0.9" marker-end="url(#arr)" opacity="0.6"/>
+  <path d="M136 228 L182 258" fill="none" stroke="#94A3B8" stroke-width="0.9" marker-end="url(#arr)" opacity="0.6"/>
+  <path d="M136 320 L182 350" fill="none" stroke="#94A3B8" stroke-width="0.9" marker-end="url(#arr)" opacity="0.6"/>
+  <path d="M136 412 L182 350" fill="none" stroke="#94A3B8" stroke-width="0.9" marker-end="url(#arr)" opacity="0.6"/>
+
+  <!-- Beats → Logstash -->
+  <path d="M312 166 L374 220" fill="none" stroke="#00BFB3" stroke-width="1.2" marker-end="url(#arr-beats)" opacity="0.8"/>
+  <path d="M312 258 L374 258" fill="none" stroke="#00BFB3" stroke-width="1.2" marker-end="url(#arr-beats)" opacity="0.8"/>
+  <path d="M312 350 L374 296" fill="none" stroke="#00BFB3" stroke-width="1.2" marker-end="url(#arr-beats)" opacity="0.8"/>
+
+  <!-- Logstash → Elasticsearch -->
+  <path d="M504 220 L568 190" fill="none" stroke="#F59E0B" stroke-width="1.3" marker-end="url(#arr-amber)" opacity="0.9"/>
+
+  <!-- Elasticsearch → Kibana -->
+  <line x1="633" y1="250" x2="633" y2="280" stroke="#F59E0B" stroke-width="1.2" marker-end="url(#arr-amber)" opacity="0.8"/>
+
+  <!-- Kibana → Output -->
+  <path d="M698 330 L764 300" fill="none" stroke="#FF6B9D" stroke-width="1.2" opacity="0.8">
+    <title>Kibana to Monitoring</title>
+  </path>
+  <path d="M698 330 L764 300" fill="none" stroke="#FF6B9D" stroke-width="1.2" marker-end="url(#arr)" opacity="0.8"/>
+
+  <!-- ═══════════════════════════════ BEATS LABEL ═══════════════════════════════ -->
+  <text x="247" y="118" font-size="10" fill="#00BFB3" text-anchor="middle" font-weight="600" opacity="0.7">Elastic Beats</text>
+  <text x="247" y="130" font-size="8.5" fill="#475569" text-anchor="middle">Ship · Parse · Forward</text>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <rect x="0" y="590" width="1000" height="50" rx="0" fill="#0A1120"/>
+  <rect x="0" y="590" width="1000" height="3" fill="#F59E0B" opacity="0.6"/>
+  <text x="36" y="612" font-size="9" fill="#475569">Stack:</text>
+  <text x="70" y="612" font-size="9" fill="#64748B">Java 11 · Spring Boot · AOP · Elastic Beats (Filebeat · Metricbeat · Auditbeat) · Logstash · Elasticsearch v8.6 · Kibana · CentOS · Jira · Confluence</text>
+  <text x="36" y="628" font-size="9" fill="#475569">Outcome:</text>
+  <text x="76" y="628" font-size="9" fill="#64748B">Centralised log visibility across distributed services · Reduced MTTR · Real-time alerting on production incidents</text>
+</svg>
