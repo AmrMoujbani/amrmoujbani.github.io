@@ -14,7 +14,7 @@ export const experience = [
       'Authored blockchain balance reconciliation scripts for a shareclass merge — converting a high-risk manual operation into a repeatable, auditable process.',
       'Onboarded several new engineers via codebase walkthroughs, pair programming, and documentation.',
     ],
-    stack: ['Go', 'Java', 'Redis', 'Kafka', 'Blockchain', 'MongoDB',s 'Microservices', 'Quarkus', 'Elasticsearch', 'Kibana', 'Grafana', 'Docker'],
+    stack: ['Go', 'Java', 'Redis', 'Kafka', 'Blockchain', 'MongoDB', 'Microservices', 'Quarkus', 'Elasticsearch', 'Kibana', 'Grafana', 'Docker'],
   },
   {
     id: 2,
