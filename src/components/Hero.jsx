@@ -54,7 +54,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex justify-center md:justify-end animate-fade-up opacity-0-init"
+        <div className="hidden md:flex justify-center md:justify-end animate-fade-up opacity-0-init"
           style={{ animationDelay: '500ms', animationFillMode: 'forwards' }}>
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-rose-500 rounded-lg blur-xl opacity-30 animate-pulse"></div>
