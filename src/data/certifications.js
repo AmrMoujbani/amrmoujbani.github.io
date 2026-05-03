@@ -3,7 +3,7 @@ export const certifications = [
     id: 1,
     title: 'AI Fluency',
     issuer: 'Anthropic',
-    year: '2025',
+    year: '2026',
     icon: '🤖',
     color: 'from-violet-500 to-purple-600',
   },
