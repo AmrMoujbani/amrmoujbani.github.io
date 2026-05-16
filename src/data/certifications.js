@@ -15,6 +15,14 @@ export const certifications = [
     icon: '🤖',
     color: 'from-violet-500 to-purple-600',
   },
+  {
+    id: 3,
+    title: 'Introduction to Model Context Protocol',
+    issuer: 'Anthropic',
+    year: '2026',
+    icon: '🤖',
+    color: 'from-violet-500 to-purple-600',
+  },
 ]
 
 export const education = [
